@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 import { Typography, Box, Stack } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
-import { Videos, Loader } from "./";
+import { Videos} from "./";
 import { fetchFromAPI } from "../utils/fetchFromApi";
 
 const VideoDetail = () => {
@@ -30,7 +30,7 @@ const VideoDetail = () => {
 
 
   return (
-    <Box minHeight='95vh' p={{md:3 , xs:2}}>
+    <Box style={{backgroundColor:'transparent' ,overflow:'hidden' , overflowY:'auto'}} height='100vh' p={{md:3 , xs:2}}>
       <Stack direction={{ xs: "column", md: "row" }} mb={4}>
         <Box flex={1}>
           <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
@@ -59,7 +59,7 @@ const VideoDetail = () => {
         </Box>
       </Stack>
 
-      <Box px={2} py={{md:1,xs:5}}
+      <Box backgroundColor='transparent' px={2} py={{md:1,xs:5}}
       justifyContent='center'
       alignItems='center'>
         <Videos videos={videos} />

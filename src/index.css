@@ -90,12 +90,25 @@ a {
   }
 }
 
-.bg{
+.bg {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
   background-color: #111927;
     background-image: 
         radial-gradient(at 47% 33%, hsl(216, 98%, 41%) 0, transparent 59%), 
         radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
 }
+/* 
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #111927;
+  background-image: 
+      radial-gradient(at 47% 33%, hsl(216, 98%, 41%) 0, transparent 59%), 
+      radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+} */
 
 .card {
   backdrop-filter: blur(16px) saturate(180%);
